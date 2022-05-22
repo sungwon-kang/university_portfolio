@@ -33,7 +33,7 @@ x_train,x_test,y_train,y_test=train_test_split(digit.data,digit.target,train_siz
 # 모델 학습을 수행하는 함수
 def fitting(model, fst, sec):
     
-    # model 조건 분기문
+    # model 조건 분기
     if model=='svm':    
         s = svm.SVC(gamma=0.001,kernel=fst,C=sec)
     elif model=='rf':
